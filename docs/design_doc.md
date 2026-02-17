@@ -4,6 +4,9 @@
 
 Build a system that learns **how much computation to use** while solving structured reasoning problems.
 
+Development environment note: use `uv` for dependency management and execution
+(`uv sync --extra dev`, then `uv run <command>`).
+
 The system combines:
 
 - **Iterative latent refinement** (LoopLM-style thinking in representation space)
