@@ -1,0 +1,11 @@
+model:
+  encoder: TODO
+  refinement_core: TODO
+  decoder: TODO
+
+halting:
+  refinement_head: TODO
+  segment_head: TODO
+
+constraints:
+  preserve_core_idea: true

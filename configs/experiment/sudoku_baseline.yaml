@@ -1,0 +1,23 @@
+experiment:
+  name: sudoku_baseline
+  seed: 42
+
+data:
+  task: sudoku
+  split: train
+  difficulty_buckets: [easy, medium, hard]
+
+model:
+  type: hierarchical_iterative_solver
+  hidden_dim: 256
+  max_refine_steps: 32
+  max_segments: 8
+
+training:
+  batch_size: 64
+  lr: 3e-4
+  steps: 100000
+  compute_penalty_weight: 0.01
+
+eval:
+  interval: 1000
