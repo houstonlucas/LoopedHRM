@@ -1,11 +1,15 @@
 model:
-  encoder: TODO
-  refinement_core: TODO
-  decoder: TODO
+  hidden_dim: 64
 
 halting:
-  refinement_head: TODO
-  segment_head: TODO
+  refinement_min_steps: 1
+  refinement_max_steps: 8
+  refinement_continue_threshold: 0.5
+  refinement_bias: 0.0
+  segment_min_steps: 1
+  segment_max_steps: 6
+  segment_continue_threshold: 0.5
+  segment_bias: 0.0
 
 constraints:
   preserve_core_idea: true

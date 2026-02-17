@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Skeleton repo for two-level adaptive compute research with Sudoku"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = ["numpy>=1.24"]
+dependencies = ["numpy>=1.24", "torch>=2.1"]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
